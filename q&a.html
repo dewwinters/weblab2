@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q&A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Elsa_(1).jpg" sizes="32x32">
+</head>
+<body>
+<!--Header section-->
+<header>
+    <h1>Welcome to Dew Website</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="q&a.html">Q&A</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!--End of header section-->
+
+<!--Main section-->
+<main>
+    <form oninput="x.value=parseInt(age.value)">
+        <fieldset>
+            <legend>Leave a question:</legend>
+<!--Name-->
+            <label for="name">What should I call you?</label>
+            <input type="text" id="name" name="name">
+            <br>
+<!--Sex-->
+            <label>How should I call you?</label>
+            <input type="radio" id="male" name="sex" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="sex" placeholder="Other">
+            <label for="other">Other</label>
+            <br>
+<!--Age-->
+            <label>How young do you see yourself?</label>
+            <br>
+            0
+            <input type="range" id="age" name="age" value="0">
+            100
+            <br>
+            <output name="x" for="age"></output>
+            <br>
+<!--Job-->
+            <label for="job">Tell me more about your job</label>
+            <select name="job" id="job">
+                <option value="graduated">Graduated</option>
+                <option value="undergraduate">Undergraduate</option>
+            </select>
+            <br>
+<!--Question-->
+            <label for="question">Question</label>
+            <input type="text" id="question" name="question" placeholder="Write something here" size="74px">
+            <br>
+<!--Submit-->
+            <input type="submit" value="Ask me">
+        </fieldset>
+    </form>
+</main>
+<!--End of main section-->
+
+<!--Footer section-->
+<footer>
+    <p>This website was designed by Dew</p>
+</footer>
+<!--End of footer section-->
+</body>
+</html>
